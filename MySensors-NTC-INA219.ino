@@ -19,6 +19,7 @@ MyMessage msg_S_MULTIMETER_V_CURRENT(ID_S_MULTIMETER,V_CURRENT);
 
 Adafruit_INA219 ina219(0x40);
 
+// I stole this function from somewhere
 double convert_adc_reading(int RawADC) {
  double Temp;
  Temp = log(10000.0*((1024.0/RawADC-1))); 
